@@ -5,11 +5,11 @@
 </head>
 
 <body>
-  <h1>ASWB Transcript Study App</h1>
 
-  <div id="content">Loading...</div>
+<h1>ASWB Transcript Study App</h1>
+<div id="content">Loading...</div>
 
-</script>
+<script>
 fetch('/aswb-transcript-study-app/transcripts/studyContent.json')
   .then(res => res.json())
   .then(data => {
@@ -22,58 +22,10 @@ fetch('/aswb-transcript-study-app/transcripts/studyContent.json')
       div.style.padding = '15px';
       div.style.border = '1px solid #ccc';
       div.style.borderRadius = '10px';
-      // KEY POINTS
-      let keyPointsHTML = '';
-      if (section.keyPoints) {
-        keyPointsHTML = `
-          <ul>
-            ${section.keyPoints.map(p => `<li>${p}</li>`).join('')}
-          </ul>
-        `;
-      }
-
-      // FLASHCARDS
-      let flashcardsHTML = '';
-      if (section.flashcards) {
-        flashcardsHTML = section.flashcards.map(card => `
-          <div style="margin-top:10px; cursor:pointer;"
-               onclick="this.innerHTML = this.innerHTML.includes('Q:')
-               ? '<strong>A:</strong> ${card.back}'
-               : '<strong>Q:</strong> ${card.front}'">
-            <strong>Q:</strong> ${card.front}
-          </div>
-        `).join('');
-      }
-
-      // QUIZ
-      let quizHTML = '';
-      if (section.quiz) {
-        quizHTML = section.quiz.map(q => `
-          <div style="margin-top:10px;">
-            <strong>${q.question}</strong><br>
-            <button onclick="this.nextElementSibling.style.display='block'">
-              Show Answer
-            </button>
-            <div style="display:none;">
-              <p><strong>Answer:</strong> ${q.answer}</p>
-              <p><em>${q.rationale}</em></p>
-            </div>
-          </div>
-        `).join('');
-      }
 
       div.innerHTML = `
         <h2>${section.title}</h2>
         <p>${section.summary}</p>
-
-        <h4>Key Points</h4>
-        ${keyPointsHTML}
-
-        <h4>Flashcards</h4>
-        ${flashcardsHTML}
-
-        <h4>Quiz</h4>
-        ${quizHTML}
       `;
 
       container.appendChild(div);
