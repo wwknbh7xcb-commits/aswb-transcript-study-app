@@ -10,7 +10,7 @@
 <div id="content">Loading...</div>
 
 <script>
-fetch('transcripts/studyContent.json')
+fetch('./transcripts/studyContent.json')
   .then(res => res.json())
   .then(data => {
     const container = document.getElementById('content');
@@ -50,10 +50,10 @@ fetch('transcripts/studyContent.json')
       container.appendChild(div);
     });
   })
-  .catch(err => {
-    document.getElementById('content').innerText = "Error loading study content";
-    console.error(err);
-  });
+  ..catch(err => {
+  console.error("FETCH ERROR:", err);
+  document.getElementById('content').innerText = "Error loading study content";
+});
 </script>
 
 </body>
