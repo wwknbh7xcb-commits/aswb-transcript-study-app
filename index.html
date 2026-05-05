@@ -9,8 +9,7 @@
 
   <div id="content">Loading...</div>
 
-  <script>
-    <script>
+ <script>
 fetch('/aswb-transcript-study-app/transcripts/studyContent.json')
   .then(res => res.json())
   .then(data => {
@@ -19,55 +18,24 @@ fetch('/aswb-transcript-study-app/transcripts/studyContent.json')
 
     data.forEach(section => {
       const div = document.createElement('div');
-      div.style.marginBottom = '30px';
+      div.style.marginBottom = '20px';
       div.style.padding = '15px';
       div.style.border = '1px solid #ccc';
       div.style.borderRadius = '10px';
 
-      let flashcardsHTML = '';
-      if (section.flashcards) {
-        flashcardsHTML = section.flashcards.map(card => `
-          <div style="margin-top:10px;">
-            <strong>Q:</strong> ${card.front}<br>
-            <strong>A:</strong> ${card.back}
-          </div>
-        `).join('');
-      }
-
-      let quizHTML = '';
-      if (section.quiz) {
-        quizHTML = section.quiz.map(q => `
-          <div style="margin-top:10px;">
-            <strong>Quiz:</strong> ${q.question}<br>
-            <em>Answer:</em> ${q.answer}<br>
-            <small>${q.rationale}</small>
-          </div>
-        `).join('');
-      }
-
       div.innerHTML = `
         <h2>${section.title}</h2>
         <p>${section.summary}</p>
-
-        <ul>
-          ${section.keyPoints.map(p => `<li>${p}</li>`).join('')}
-        </ul>
-
-        <h4>Flashcards</h4>
-        ${flashcardsHTML}
-
-        <h4>Quiz</h4>
-        ${quizHTML}
       `;
 
       container.appendChild(div);
     });
   })
-  .catch(() => {
-    document.getElementById('content').innerText = "Error loading study content";
+  .catch(err => {
+    document.getElementById('content').innerText =
+      "Error: " + err.message;
   });
 </script>
-  </script>
 
 </body>
 </html>
