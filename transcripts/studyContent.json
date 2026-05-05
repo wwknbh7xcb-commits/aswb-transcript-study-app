@@ -1,7 +1,27 @@
 [
   {
     "title": "NASW Code of Ethics Overview",
-    "summary": "Professional ethics are at the core of social work and guide all decision-making on the ASWB exam."
+    "summary": "Professional ethics guide all decision-making.",
+    "keyPoints": [
+      "Foundation of social work practice",
+      "Guides ethical decisions",
+      "Tested heavily on ASWB"
+    ],
+    "flashcards": [
+      {
+        "front": "What is the purpose of the NASW Code of Ethics?",
+        "back": "To guide ethical decision-making in social work."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "What is the main role of ethics in social work?",
+        "answer": "Guide decision-making",
+        "rationale": "Ethics provide a framework for decisions."
+      }
+    ]
+  }
+]
   },
   {
     "title": "Purpose of Code of Ethics",
