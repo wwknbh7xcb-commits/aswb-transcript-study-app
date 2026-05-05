@@ -1,25 +1,119 @@
 [
   {
-    "title": "Example Study Section",
-    "domain": "Assessment, Diagnosis, and Treatment Planning",
-    "summary": "This is where your transcript summary will go.",
+    "title": "Ego-Syntonic vs Ego-Dystonic",
+    "domain": "DSM Concepts",
+    "summary": "Ego-dystonic disorders are distressing and unwanted by the client, while ego-syntonic disorders are consistent with the person's self-image and not seen as problematic.",
     "keyPoints": [
-      "Key point one",
-      "Key point two",
-      "Key point three"
+      "Ego-dystonic = client aware + distressed (ex: depression, anxiety)",
+      "Ego-syntonic = part of identity (ex: personality disorders)",
+      "Personality disorders are typically ego-syntonic"
     ],
     "flashcards": [
       {
-        "front": "What should social workers usually assess first?",
-        "back": "Safety, risk, and immediate client needs."
+        "front": "What is ego-dystonic?",
+        "back": "Symptoms are distressing and inconsistent with self-image."
+      },
+      {
+        "front": "What is ego-syntonic?",
+        "back": "Symptoms are consistent with self-image and not seen as a problem."
       }
     ],
     "quiz": [
       {
-        "question": "What is usually prioritized first in ASWB questions?",
-        "choices": ["Long-term planning", "Safety/risk", "Diagnosis only", "Termination"],
-        "answer": "Safety/risk",
-        "rationale": "ASWB questions often prioritize safety, risk, and immediate needs before planning."
+        "question": "A client with depression is distressed by their symptoms. This is:",
+        "choices": ["Ego-syntonic", "Ego-dystonic", "Psychotic", "Somatic"],
+        "answer": "Ego-dystonic",
+        "rationale": "Depression is distressing and unwanted, making it ego-dystonic."
+      }
+    ]
+  },
+
+  {
+    "title": "Personality Disorder Quick Differentiation",
+    "domain": "Personality Disorders",
+    "summary": "Personality disorders are long-standing, ego-syntonic patterns of behavior that differ based on interpersonal style, emotional regulation, and thinking patterns.",
+    "keyPoints": [
+      "Paranoid = mistrust, suspicion",
+      "Schizoid = loner (no desire for relationships)",
+      "Avoidant = lonely (wants relationships but fears rejection)",
+      "Borderline = unstable relationships + suicidal gestures",
+      "Narcissistic = grandiosity + lack of empathy",
+      "Antisocial = violation of rights + lack of remorse"
+    ],
+    "flashcards": [
+      {
+        "front": "Schizoid vs Avoidant?",
+        "back": "Schizoid = loner (no desire). Avoidant = lonely (wants connection but fears rejection)."
+      },
+      {
+        "front": "Key feature of Borderline PD?",
+        "back": "Unstable relationships + fear of abandonment + suicidal gestures."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Client wants relationships but avoids them due to fear of rejection. Diagnosis?",
+        "choices": ["Schizoid", "Avoidant", "Paranoid", "Narcissistic"],
+        "answer": "Avoidant",
+        "rationale": "Avoidant clients desire connection but avoid due to fear of rejection."
+      }
+    ]
+  },
+
+  {
+    "title": "Neurocognitive Disorders",
+    "domain": "DSM Differentials",
+    "summary": "Neurocognitive disorders exist on a spectrum from mild impairment to severe impairment affecting independence.",
+    "keyPoints": [
+      "Delirium = rapid onset, medical cause, temporary",
+      "Mild NCD = decline but independent",
+      "Major NCD = significant impairment, needs support",
+      "Depression can mimic memory loss (important differential)"
+    ],
+    "flashcards": [
+      {
+        "front": "Delirium vs dementia?",
+        "back": "Delirium = rapid + reversible. Dementia = gradual decline."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Client has sudden confusion in hospital. Diagnosis?",
+        "choices": ["Delirium", "Major NCD", "Depression", "Schizophrenia"],
+        "answer": "Delirium",
+        "rationale": "Rapid onset confusion in medical setting = delirium."
+      }
+    ]
+  },
+
+  {
+    "title": "Therapy Theories (HIGH-YIELD)",
+    "domain": "Theories",
+    "summary": "ASWB questions often test how change happens in therapy models.",
+    "keyPoints": [
+      "Psychodynamic = insight into unconscious",
+      "Behavioral = reinforcement/punishment",
+      "Cognitive = change thoughts → change behavior",
+      "Solution-focused = strengths + goals",
+      "DBT = mindfulness + emotion regulation",
+      "Task-centered = practical problem solving"
+    ],
+    "flashcards": [
+      {
+        "front": "What is DBT used for?",
+        "back": "Borderline personality disorder + emotional regulation."
+      },
+      {
+        "front": "Cognitive therapy focuses on?",
+        "back": "Changing automatic thoughts."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Therapist focuses on changing thoughts to change behavior. Approach?",
+        "choices": ["Behavioral", "Cognitive", "Psychodynamic", "Gestalt"],
+        "answer": "Cognitive",
+        "rationale": "Cognitive therapy targets thought patterns."
       }
     ]
   }
