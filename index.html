@@ -10,7 +10,7 @@
 <div id="content">Loading...</div>
 
 <script>
-fetch('transcripts/studyContent.json')
+fetch('/aswb-transcript-study-app/transcripts/studyContent.json')
   .then(res => res.json())
   .then(data => {
     const container = document.getElementById('content');
