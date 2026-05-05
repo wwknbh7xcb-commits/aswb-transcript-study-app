@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Example Study Section",
+    "domain": "Assessment, Diagnosis, and Treatment Planning",
+    "summary": "This is where your transcript summary will go.",
+    "keyPoints": [
+      "Key point one",
+      "Key point two",
+      "Key point three"
+    ],
+    "flashcards": [
+      {
+        "front": "What should social workers usually assess first?",
+        "back": "Safety, risk, and immediate client needs."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "What is usually prioritized first in ASWB questions?",
+        "choices": ["Long-term planning", "Safety/risk", "Diagnosis only", "Termination"],
+        "answer": "Safety/risk",
+        "rationale": "ASWB questions often prioritize safety, risk, and immediate needs before planning."
+      }
+    ]
+  }
+]
