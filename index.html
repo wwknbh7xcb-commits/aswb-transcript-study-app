@@ -9,7 +9,7 @@
 
   <div id="content">Loading...</div>
 
- <script>
+</script>
 fetch('/aswb-transcript-study-app/transcripts/studyContent.json')
   .then(res => res.json())
   .then(data => {
@@ -22,7 +22,6 @@ fetch('/aswb-transcript-study-app/transcripts/studyContent.json')
       div.style.padding = '15px';
       div.style.border = '1px solid #ccc';
       div.style.borderRadius = '10px';
-
       // KEY POINTS
       let keyPointsHTML = '';
       if (section.keyPoints) {
